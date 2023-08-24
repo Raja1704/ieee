@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEEE LAB</title>
 
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
+<!-- Bootstrap CSS -->
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+
+<!-- Owl Carousel CSS -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+/>
 
     <style>
       body::-webkit-scrollbar {
@@ -20,15 +31,11 @@
     </style>
 
     <link rel="stylesheet" href="style.css" />
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
+
+
     <nav>
       <img src="./images/logo.jpeg" alt="" />
       <div class="navigation">
@@ -47,20 +54,72 @@
         Branch code: STB1034 &nbsp;&nbsp;&nbsp;School Code: 60108973
       </p>
       <div class="btn">
-        <a class="yellow" href="#events">UPCOMING EVENTS</a>
+        <a class="yellow" href="#events">Know more</a>
       </div>
     </section>
 
-    <section id="events">
-      <h1>Our Upcoming events</h1>
-      <p>----</p>
-      <div class="card-wrapper">
-        <div class="poster">
-          <img src="./images/event-1.jpg" alt="Event 1 Poster" />
-          <img src="./images/event-2.jpg" alt="Event 1 Poster" />
-        </div>
+ 
+
+<section id="events">
+  <h1>Our Activities so far</h1>
+  <p>----</p>
+  <div class="card-wrapper">
+    <div class="poster">
+      <img src="./images/event-1.jpg" alt="Event 1 Poster" />
+    </div>
+    <div class="poster">
+      <div class="image-container">
+      <img src="./images/event-2.jpg" alt="Event 2 Poster" class="glow-animation"/>
       </div>
-    </section>
+      
+      <span class="watermark"> <span class="green-dot"></span>Live</span>
+      <div class="button-container">
+        <a href="https://forms.gle/7omi4F5MCCeGDnFa9" class="register-button">Register Now</a>
+      </div>
+    </>
+  </div>
+</section>
+
+  
+    <div id="myCarousel" class="owl-carousel owl-theme my-3">
+      <div class="card shadow my-3">
+        <img
+          src="./images/act-1.jpg"
+          class="card-img-top"
+          height="300"
+          alt="Image 1"
+        />
+      </div>
+      <div class="card shadow my-3">
+        <img
+          src="./images/act-2.jpg"
+          class="card-img-top"
+          alt="Image 2"
+          height="300"
+        />
+
+      </div>
+      <div class="card shadow my-3">
+      <img
+        src="./images/act-3.jpg"
+        class="card-img-top"
+        alt="Image 2"
+        height="300"
+      />
+
+    </div>
+  
+    <div class="card shadow my-3">
+    <img
+      src="./images/act-4.jpg"
+      class="card-img-top"
+      alt="Image 2"
+      height="300"
+    />
+  </div>
+  
+</div>
+    
     <footer>
       <div>
         <div class="footer">
@@ -84,6 +143,43 @@
         </div>
       </div>
     </footer>
-    <script></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+      $('#myCarousel').owlCarousel({
+        items: 3, 
+        loop: true, 
+        margin: 20, 
+        nav: true, 
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        navText: [
+          "<i class='fas fa-chevron-left'></i>",
+          "<i class='fas fa-chevron-right'></i>",
+        ], 
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2, 
+          },
+          992: {
+            items: 3, 
+          },
+        },
+      });
+    });
+  </script>
   </body>
 </html>
