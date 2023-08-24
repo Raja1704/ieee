@@ -189,7 +189,28 @@ nav .navigation img {
     height: auto;
     cursor: pointer;
   }
-
+  #home {
+    height: 1100px;
+  }
+  #home .register-button {
+    font-size: 0.9rem;
+    padding-left: 40px ;
+    padding-right: 40px ;
+  }
+  #home .poster img {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 30px;
+  
+    width: 350px;
+    height: 500px;
+    border-radius: 24px;
+  }
+  .button-container {
+    right: 0;
+    text-align: center;
+    margin-top: 18px;
+  }
   nav .navigation img {
     width: 50px;
     height: auto;
@@ -203,9 +224,32 @@ nav .navigation img {
     height: auto;
     cursor: pointer;
   }
+  #home {
+    height: 1100px;
+  }
+
+  #home .register-button {
+    font-size: 0.9rem;
+    padding-left: 40px ;
+    padding-right: 40px ;
+  }
+  #home .poster img {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 30px;
+  
+    width: 300px;
+    height: 500px;
+    border-radius: 24px;
+  }
   .register-button {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .button-container {
+    right: 0;
+    text-align: center;
+    margin-top: 18px;
   }
 
   nav .navigation img {
