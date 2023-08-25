@@ -214,7 +214,25 @@ nav .navigation img {
   nav .navigation img {
     width: 50px;
     height: auto;
-  }
+  }.footer {
+  padding: 9px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer .row {
+  text-align: center;
+}
+
+.footer .row ul li {
+  margin: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+
 
 }
 
@@ -255,7 +273,25 @@ nav .navigation img {
   nav .navigation img {
     width: 50px;
     height: auto;
-  }
+  }.footer {
+  padding: 9px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer .row {
+  text-align: center;
+}
+
+.footer .row ul li {
+  margin: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black;
+}
+
+
 }
 
 
